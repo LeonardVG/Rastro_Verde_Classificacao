@@ -1,0 +1,24 @@
+python ./scripts/project.py model yolo26m-cls.pt \
+    --train \
+    --bench \
+    --epoch 10 \
+    --dataset-name final_train \
+    --train-path ./cls/dataset_Outros/train \
+    --val-path ./cls/dataset_Outros/val \
+    --test-path ./cls/dataset_Outros/val \
+    --save-models-path ./Models/treino_4/final_train/yolo26m_448configTrial29_10ep \
+    --result-path ./results/treino_4/final_train/yolo26m_448configTrial29_10ep \
+    --gamma 0.0 \
+    --imgsz 448 \
+    --batch 8 \
+    --aug-auto_augment augmix \
+    --dropout 0.330756583188206 \
+    --aug-erasing 0.25559207989878674 \
+    --aug-fliplr 0.2569910575268969 \
+    --aug-flipud 0.7822640900720575 \
+    --aug-hsv_h 0.05360902091771568 \
+    --aug-hsv_s 0.38361029877110564 \
+    --aug-hsv_v 0.3062311020263138 \
+    --lr0 0.0003487421890088836 \
+    --aug-scale 0.4456183517882908 \
+    --weight-decay 8.314761950013968e-06
